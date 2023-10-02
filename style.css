@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:#fff;
+    background-color: #0866FF;
+    padding: 2rem;
+}
+
+nav{
+    display: flex;
+    gap: 3rem;
+}
+
+nav > a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+#about{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#produtos{
+    margin: 0 2rem;
+}
+
+.sectionTitle{
+    font-size: 2rem;
+    border-bottom: 2px solid #0866FF;
+    color: #0049be;
+    padding-bottom: 0.5rem;
+}
+
+img{
+    width: 100%;
+}
+
+#appContainer{
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+button{
+    width: 100%;
+    padding: 0.5rem;
+    color: #fff;
+    background-color: #0866FF;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.2;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+@media screen and (min-width:641px) and (max-width: 1023px){
+
+    #appContainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 640px){
+
+    nav{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #appContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
